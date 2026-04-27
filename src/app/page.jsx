@@ -285,12 +285,12 @@ const Page = () => {
           <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.08)_1px,transparent_1px)] bg-[size:42px_42px] opacity-40" />
 
           <div className="relative z-10 grid gap-8 lg:grid-cols-[1.4fr_0.9fr] lg:items-end">
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-xs font-medium uppercase tracking-[0.28em] text-sky-700">
+            <div className="space-y-6  ">
+              <div className="inline-flex  items-center gap-2 rounded-full border border-sky-200 bg-sky-50 px-4 py-2 text-xs font-medium uppercase tracking-[0.28em] text-sky-700">
                 Trusted store pricing
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 max-sm:hidden">
                 <h2 className="max-w-3xl text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
                   Everyday essentials, clearly priced for every customer.
                 </h2>
@@ -328,7 +328,7 @@ const Page = () => {
               <Notice feedback={feedback} />
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+            <div className="grid gap-4 max-sm:hidden sm:grid-cols-3 lg:grid-cols-1">
               {stats.map((stat) => (
                 <CardSpotlight className="p-5" color="34, 211, 238" key={stat.label} radius={260}>
                   <p className="text-xs font-medium uppercase tracking-[0.28em] text-slate-500">
