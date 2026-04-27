@@ -345,7 +345,7 @@ const Page = () => {
 
         <section className="rounded-[32px] border border-sky-100 bg-white/85 p-4 shadow-[0_24px_80px_rgba(148,163,184,0.18)] backdrop-blur sm:p-6">
           <div className="mb-6 flex flex-col gap-4 border-b border-slate-200 pb-6 sm:flex-row sm:items-end sm:justify-between">
-            <div className="space-y-2">
+            <div className="space-y-2 max-sm:hidden">
               <p className="text-xs font-medium uppercase tracking-[0.3em] text-slate-500">
                 Inventory overview
               </p>
@@ -360,7 +360,7 @@ const Page = () => {
             </div>
 
             <button
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-sky-200 bg-sky-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-sky-600"
+              className="inline-flex max-sm:hidden items-center justify-center gap-2 rounded-full border border-sky-200 bg-sky-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-sky-600"
               onClick={() => {
                 clearFeedback();
                 setAdd(true);
